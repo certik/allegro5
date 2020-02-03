@@ -1,3 +1,4 @@
+#define GLX_GLXEXT_PROTOTYPES
 /* HACK: Prevent both Mesa and SGI's broken headers from screwing us */
 #define __glxext_h_
 #include <GL/glx.h>

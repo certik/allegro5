@@ -101,12 +101,14 @@
 
 #else /* ALLEGRO_MACOSX */
 
+#define GL_GLEXT_PROTOTYPES
 /* HACK: Prevent both Mesa and SGI's broken headers from screwing us */
 #define __glext_h_
 #define __glxext_h_
 #include <GL/gl.h>
 #undef  __glext_h_
 #undef  __glxext_h_
+#undef GL_VERSION_3_0
 
 #endif /* ALLEGRO_MACOSX */
 
